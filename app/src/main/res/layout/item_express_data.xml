@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <!-- 左边 -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <!-- 上面的竖线 -->
+        <View
+            android:id="@+id/view_top_line"
+            android:layout_width="2dp"
+            android:layout_height="15dp"
+            android:background="@color/lightgray"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="-1dp"
+            />
+
+        <!-- 圆点 -->
+        <ImageView
+            android:id="@+id/iv_expres_spot"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/express_point_old"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            />
+        <View
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:background="@color/lightgray"
+            android:layout_gravity="center_horizontal"
+            />
+
+    </LinearLayout>
+
+    <!-- 右边 -->
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="17dp"
+
+        >
+        <TextView
+            android:id="@+id/tv_express_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="asdfasdfasd大事发生的苏打粉asdfasdfas阿斯蒂芬斯蒂芬阿萨德发达省份撒旦法"
+            android:textColor="@color/gray"
+            android:lineSpacingExtra="2dp"
+            android:textSize="16sp"
+            android:textIsSelectable="true"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_express_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/lightgray"
+            android:textSize="12sp"
+            android:text="2016年4月27日 00:27:45"
+            android:layout_marginTop="5dp"
+            android:textIsSelectable="true"
+            android:paddingBottom="10dp"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/lightgray"
+            android:layout_height="0.5dp"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

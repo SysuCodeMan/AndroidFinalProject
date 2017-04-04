@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">有我</string>
+    <string-array name="spinnerArray">
+        <item>第一学期</item>
+        <item>第二学期</item>
+        <item>第三学期</item>
+        <item>所有</item>
+    </string-array>
+
+    <string-array name="timetable_select_term">
+        <item>第一学期</item>
+        <item>第二学期</item>
+        <item>第三学期</item>
+    </string-array>
+
+    <string name="main_addnodes">记一笔</string>
+    <string name="addnodes_time">时间:</string>
+    <string name="addnodes_money">金额:</string>
+    <string name="addnodes_type">类型:</string>
+    <string name="addnodes_earnings">收益:</string>
+    <string name="addnodes_remark">备注:</string>
+    <string name="addnodes_cancel">取消</string>
+    <string name="addnodes_add">添加</string>
+    <string name="main_timeWorry">时间错误了！</string>
+    <string name="moreaction_update">确认修改</string>
+    <string name="moreaction_delete">确认删除</string>
+    <string name="update_msg">修改账单信息</string>
+
+    <string name="specific_data_data">账单</string>
+    <string name="specific_data_totalintodata">收入账单</string>
+    <string name="specific_data_totaloutdata">支出账单</string>
+    <string name="specific_data_alldata">详细账单</string>
+    <string name="specific_data_todaydata">今日账单明细</string>
+    <string name="specific_data_monthdata">本月账单明细</string>
+    <string name="specific_data_yeardata">本年账单明细</string>
+</resources>

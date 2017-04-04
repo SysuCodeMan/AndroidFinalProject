@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/darkBlue"
+                android:id="@+id/top">
+                <ImageButton
+                    android:id="@+id/account"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@mipmap/account2"
+                    android:scaleX="1.5"
+                    android:scaleY="1.5"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/darkBlue"/>
+                <ImageButton
+                    android:id="@+id/express"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@mipmap/express1"
+                    android:scaleX="1.3"
+                    android:scaleY="1.3"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/darkBlue"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/top"
+                android:layout_above="@+id/bottom">
+
+                <com.example.john.finalproject.Life.account.MyPieChart
+                    android:id="@+id/chart"
+                    android:layout_width="230dp"
+                    android:layout_height="230dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" />
+
+                <RelativeLayout
+                    android:layout_marginTop="-30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/chart"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="40dp"
+                        android:layout_alignParentLeft="true">
+                        <TextView
+                            android:id="@+id/in"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="总收入:"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/totol_income"
+                            android:textColor="#6CCEC9"
+                            android:textSize="30sp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="40dp">
+                        <TextView
+                            android:id="@+id/out"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="总支出:"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/total_expenditure"
+                            android:textColor="#F7874A"
+                            android:textSize="30sp"/>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+
+            <LinearLayout
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bottom">
+                <ImageButton
+                    android:id="@+id/life_sport_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@mipmap/sport1"
+                    android:background="@color/darkBlue"/>
+                <ImageButton
+                    android:id="@+id/life_life_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@mipmap/life2_1"
+                    android:background="@color/darkBlue"/>
+                <ImageButton
+                    android:id="@+id/life_study_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@mipmap/study1"
+                    android:background="@color/darkBlue"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/life_left_drawer"
+        android:layout_width="180dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:background="@color/darkBlue">
+
+    </ListView>
+
+</LinearLayout>
